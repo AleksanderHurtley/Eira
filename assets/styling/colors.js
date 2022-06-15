@@ -1,6 +1,8 @@
 const colors = {
-  background: '#F5F5F5',
-  text: '#000000B1',
+  background: '#E8E8DD',
+  text: '#1C1D13',
+  navBarBackgrond: '#B9BA88',
+  details: '#E09F3A'
 };
 
 export default colors

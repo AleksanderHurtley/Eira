@@ -9,7 +9,7 @@ export default function Splash() {
   });
 
   return (
-    <ImageBackground style={{flex: 1}} source={require("../assets/images/splashBackground.png")} resizeMode="cover"> 
+    <ImageBackground style={{flex: 1}} source={require("../assets/images/backgroundHome.png")} resizeMode="cover"> 
       <SafeAreaView style={styles.container}>
         <Text style={[styles.textHeader, styles.splashTextPosition, {fontFamily: 'Poppins_700Bold'}]}>Eira</Text>
         <Text style= {[styles.textDefault, {fontFamily: 'Poppins_700Bold'}]}>An app about my cat</Text>

@@ -1,16 +1,24 @@
 import { StyleSheet } from "react-native";
 import colors from "./colors";
-import { useFonts, Poppins_700Bold } from '@expo-google-fonts/poppins';
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.background,
     paddingTop: Platform.OS === "android" ? paddingTop = StatusBar.currentHeight : 0,
   },
   textHeader: {
-    fontSize: 60,
+    fontFamily: 'Poppins_700Bold',
+    position: 'relative',
+    fontSize: 70,
+    marginTop: '55%',
+    marginLeft: '2%',
+    opacity: .7
+  },
+  textDefault:  {
+    fontFamily: 'Poppins_700Bold',
+    marginLeft: '2%',
+    fontSize: 30,
+    opacity: .7
   },
   eiraSplash: {
     position: 'absolute',
@@ -18,6 +26,19 @@ const styles = StyleSheet.create({
     left: -10,
     height: 330,
     width: 332,
+  },
+  splashTextPosition:{
+    paddingTop: 10
+  },
+  tabBar: {
+    backgroundColor: colors.navBarBackgrond,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    position: 'absolute'
+  },
+  tabBarIcon: {
+    height: 30,
+    width: 30
   }
 });
 
