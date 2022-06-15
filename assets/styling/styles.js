@@ -10,13 +10,13 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_700Bold',
     position: 'relative',
     fontSize: 70,
-    marginTop: '55%',
-    marginLeft: '2%',
+    marginTop: '48%',
+    marginLeft: '3%',
     opacity: .7
   },
   textDefault:  {
     fontFamily: 'Poppins_700Bold',
-    marginLeft: '2%',
+    marginLeft: '3%',
     fontSize: 30,
     opacity: .7
   },

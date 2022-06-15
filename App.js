@@ -17,20 +17,26 @@ const TabNavigator = () => {
   return (
     <Tab.Navigator
     screenOptions={{
-      tabBarActiveTintColor: '#e91e63',
       tabBarStyle: styles.tabBar,
       tabBarShowLabel: false,
-      tabBarActiveTintColor: color.details
+      tabBarActiveTintColor: color.iconActive,
+      tabBarInactiveTintColor: color.iconInactive,
+      headerShown: false,
     }}>
       <Tab.Screen name="Home" component={Home} 
         options={{
-          headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}/>
-      <Tab.Screen name="About" component={About} options={{headerShown: false}}/>
-      <Tab.Screen name="Food" component={Food} options={{headerShown: false}}/>
+      <Tab.Screen name="Food" component={Food} options={{
+        tabBarIcon: ({color, size}) => 
+          <MaterialCommunityIcons name="food-drumstick" size={size} color={color}/>
+        }}/>
+      <Tab.Screen name="About" component={About} options={{
+        tabBarIcon: ({color, size}) => 
+          <MaterialCommunityIcons name="information" size={size} color={color}/>
+        }}/>
     </Tab.Navigator>
   )
 }
