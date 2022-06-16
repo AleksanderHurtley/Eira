@@ -65,7 +65,7 @@ const Gallery = () => {
             <Image
               key={index}
               style={{ width: '100%', height: '100%' }}
-              resizeMode='center'
+              resizeMode='contain'
               source={item.image}
             />
           )}
