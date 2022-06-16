@@ -20,6 +20,22 @@ const styles = StyleSheet.create({
     fontSize: 30,
     opacity: .7
   },
+  textParagraphHeader:  {
+    paddingTop: '10%',
+    fontFamily: 'Poppins_700Bold',
+    marginLeft: '3%',
+    marginRight: '5%',
+    fontSize: 32,
+    opacity: .8
+  },
+  textParagraphDefault:  {
+    paddingTop: 20,
+    fontFamily: 'Poppins_700Bold',
+    marginLeft: '3%',
+    marginRight: '5%',
+    fontSize: 20,
+    opacity: .7
+  },
   eiraSplash: {
     position: 'absolute',
     bottom: 0,
@@ -39,6 +55,15 @@ const styles = StyleSheet.create({
   tabBarIcon: {
     height: 30,
     width: 30
+  },
+  scrollView: {
+    paddingTop: '1%',
+    marginBottom: 50
+  },
+  image: {
+    width: '100%',
+    height: 340,
+    resizeMode: 'stretch'
   }
 });
 
