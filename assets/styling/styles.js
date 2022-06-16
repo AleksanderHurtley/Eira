@@ -64,6 +64,21 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 340,
     resizeMode: 'stretch'
+  },
+  galleryBackground: { 
+    flex: 1,
+    backgroundColor: colors.background,
+    alignItems: 'center',
+  },
+  carousel: { 
+    flex: 3/4,
+    marginTop: 20 
+  },
+  galleryHeader: {
+    paddingTop: '20%',
+    fontFamily: 'Poppins_700Bold',
+    fontSize: 32,
+    opacity: .8
   }
 });
 

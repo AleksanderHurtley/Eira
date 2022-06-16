@@ -1,5 +1,5 @@
 import { useFonts, Poppins_700Bold } from '@expo-google-fonts/poppins';
-import About from './components/About'
+import Gallery from './components/Gallery'
 import Food from './components/Food'
 import Home from './components/Home'
 import styles from './assets/styling/styles';
@@ -33,9 +33,9 @@ const TabNavigator = () => {
         tabBarIcon: ({color, size}) => 
           <MaterialCommunityIcons name="food-drumstick" size={size} color={color}/>
         }}/>
-      <Tab.Screen name="About" component={About} options={{
+      <Tab.Screen name="Gallery" component={Gallery} options={{
         tabBarIcon: ({color, size}) => 
-          <MaterialCommunityIcons name="information" size={size} color={color}/>
+          <MaterialCommunityIcons name="image-multiple" size={size} color={color}/>
         }}/>
     </Tab.Navigator>
   )

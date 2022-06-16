@@ -17,6 +17,9 @@ const Food = () => {
         <Text style={styles.textParagraphHeader}>Home cooked</Text>
         <Image source={require('../assets/images/foodTorsk.webp')} style={styles.image}/>
         <Text style={styles.textParagraphDefault}>Her favorite home cooked food is cod fillet.</Text>
+        <Text style={styles.textParagraphHeader}>Water source</Text>
+        <Image source={require('../assets/images/eiraVann.jpg')} style={styles.image}/>
+        <Text style={styles.textParagraphDefault}>Eira uses a water fountain with a flower on top as a water source.</Text>
       </ScrollView>
     </SafeAreaView>
   )
