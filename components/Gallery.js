@@ -21,7 +21,6 @@ const SPACING = 10;
 const THUMB_SIZE = 80;
 
 const Gallery = () => {
-  console.log(Dimensions.get('window'))
   const carouselRef = useRef();
   const flatListRef = useRef();
 

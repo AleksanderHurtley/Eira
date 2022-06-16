@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 340,
-    resizeMode: 'stretch'
+    resizeMode: 'contain'
   },
   galleryBackground: { 
     flex: 1,
