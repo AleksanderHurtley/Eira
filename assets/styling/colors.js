@@ -5,6 +5,7 @@ const colors = {
   details: '#E09F3A',
   iconActive: '#464232',
   iconInactive: '#E8E8DD',
+  iconInactive2: '#B6B6B6'
 };
 
 export default colors

@@ -3,6 +3,7 @@ import { useState, useRef } from "react"
 import styles from "../assets/styling/styles";
 // import Carousel, { Pagination } from 'react-native-snap-carousel';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
+import colors from "../assets/styling/colors";
 
 
 const IMAGES = {
@@ -13,8 +14,10 @@ const IMAGES = {
     image5: require('../assets/images/gallery/eiraSleep2.jpg'),
     image6: require('../assets/images/gallery/eiraSleep4.jpg'),
     image7: require('../assets/images/gallery/eiraAdventure.jpg'),
-    image8: require('../assets/images/gallery/eiraAdventure.jpg'),
-}
+    image8: require('../assets/images/gallery/eiraBox.jpeg'),
+    image9: require('../assets/images/gallery/eiraBag.jpeg'),
+    image10: require('../assets/images/gallery/eiraKitten.jpeg'),
+  }
 
 const { width } = Dimensions.get('window');
 const SPACING = 10;
@@ -31,7 +34,10 @@ const Gallery = () => {
     { id: '4', image: IMAGES.image4 },
     { id: '5', image: IMAGES.image5 },
     { id: '6', image: IMAGES.image6 },
-    { id: '7', image: IMAGES.image7 }
+    { id: '7', image: IMAGES.image7 },
+    { id: '8', image: IMAGES.image8 },
+    { id: '9', image: IMAGES.image9 },
+    { id: '10', image: IMAGES.image10 },
   ]);
 
   const [indexSelected, setIndexSelected] = useState(0);
@@ -64,7 +70,7 @@ const Gallery = () => {
           renderItem={({ item, index }) => (
             <Image
               key={index}
-              style={{ width: '100%', height: '100%' }}
+              style={styles.galleryImage}
               resizeMode='contain'
               source={item.image}
             />
@@ -74,8 +80,8 @@ const Gallery = () => {
       </View>
       <View>
         <Pagination
-          inactiveDotColor='gray'
-          dotColor={'orange'}
+          inactiveDotColor={colors.iconInactive2}
+          dotColor={colors.details}
           activeDotIndex={indexSelected}
           dotsLength={images.length}
           animatedDuration={150}
@@ -86,7 +92,7 @@ const Gallery = () => {
         ref={flatListRef}
         horizontal={true}
         data={images}
-        style={{ position: 'absolute', bottom: 80 }}
+        style={styles.flatList}
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{
           paddingHorizontal: SPACING
@@ -104,7 +110,7 @@ const Gallery = () => {
                 marginRight: SPACING,
                 borderRadius: 16,
                 borderWidth: index === indexSelected ? 4 : 0.75,
-                borderColor: index === indexSelected ? 'orange' : 'white'
+                borderColor: index === indexSelected ? colors.details : colors.background
               }}
               source={item.image}
             />

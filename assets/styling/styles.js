@@ -79,7 +79,15 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins_700Bold',
     fontSize: 32,
     opacity: .8
-  }
+  },
+  galleryImage: { 
+    width: '100%', 
+    height: '100%' 
+  },
+  flatList: { 
+    position: 'absolute', 
+    bottom: 90 
+  },
 });
 
 export default styles;
